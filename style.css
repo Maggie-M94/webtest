@@ -106,6 +106,39 @@ p {
     filter: brightness(90%);
 }
 
+.btn-secondary {
+    font-family: "Gilroy-Semibold" !important;
+    box-shadow: none;
+    background: #CA4248;
+    width: 100%;
+    color: #ffffff;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    margin-top: 10px;
+    border: none;
+}
+
+.btn-secondary:focus,
+.btn-secondary:active:focus,
+.btn-secondary:hover,
+.btn-secondary:active {
+    font-family: "Gilroy-Semibold";
+    box-shadow: none;
+    background: #CA4248;
+    width: 100%;
+    color: #ffffff;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: none;
+    filter: brightness(90%);
+}
+
 .input-date {
     color: #CA4248;
     background-color: #ffffff !important;
@@ -303,6 +336,13 @@ option {
     padding-right: 0;
     padding-top: 10px !important;
     padding-bottom: 20px !important;
+}
+
+.content-field {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px !important;
+    padding-bottom: 0px !important;
 }
 
 hr {
