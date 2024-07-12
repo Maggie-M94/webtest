@@ -32,7 +32,6 @@ h1 {
 h2 {
     font-family: "Gilroy-Semibold";
     font-size: 1.8em;
-    padding-top: 20px;
     text-transform: uppercase;
     color: #ffffff !important;
     text-align: center;
@@ -319,7 +318,7 @@ select.form-control {
     -webkit-appearance: menulist;
     font-family: "Gilroy-Medium";
     color: #CA4248;
-    height: 40px !important;
+    height: 35px !important;
 }
 
 .container-fluid {
@@ -335,14 +334,13 @@ option {
 .content {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 10px !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 10px !important;
 }
 
 .content-field {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 10px !important;
+    padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
 
