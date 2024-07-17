@@ -242,12 +242,12 @@ select.form-control {
     font-size: 1em;
     -webkit-appearance: menulist;
     color: #000000 ;
-    height: 48px !important;
+    height: 38px !important;
 }
 
 select.form-control:focus {
     color: #000000 ;
-    height: 48px !important;
+    height: 38px !important;
 }
 
 option {
