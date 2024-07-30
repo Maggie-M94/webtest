@@ -1,0 +1,427 @@
+@font-face {
+    font-family: "ArtoisSebastian-Sans";
+    src: url('assets/fonts/ArtoisSebastian-Sans.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Apercu-Regular";
+    src: url('assets/fonts/Apercu-Regular.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArtoisSebastian-Sans";
+    src: url('assets/fonts/ArtoisSebastian-Sans.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ApercuMedium";
+    src: url('assets/fonts/Apercu Medium.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ArtoisIsabella-Serif";
+    src: url('assets/fonts/ArtoisIsabella-Serif.otf');
+    font-style: normal;
+}
+
+h1 {
+    font-family: "ArtoisIsabella-Serif"!important;
+    color: #231f20 !important;
+    font-size: calc(1.375rem + 1.5vw);
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500 !important;
+}
+
+h2 {
+    font-family: "ArtoisIsabella-Serif"!important;
+    color: #231f20 !important;
+    font-weight: 500 !important;
+    font-size: calc(1.325rem + 0.9vw);
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: "ArtoisSebastian-Sans"!important;
+    color: #231f20;
+    font-weight: 100;
+    font-size: calc(1.3rem + 0.6vw);
+    text-align: center;
+    padding-top: 10px;
+}
+
+h4 {
+    font-family: "ArtoisSebastian-Sans"!important;
+    color: #231f20;
+    font-weight: 200;
+    font-size: calc(1.275rem + 0.3vw);
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: "ArtoisSebastian-Sans";
+    color: #231f20;
+    font-size: 1em;
+    padding-top: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+span {
+    font-family: ""!important;
+    color: #231f20;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.btn-primary {
+    font-family: "ArtoisSebastian-Sans" !important;
+    color: white;
+    background-color: #CC001C;
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "ArtoisSebastian-Sans";
+    text-transform: uppercase;
+    outline: none;
+    border: 0px none;
+    border-style: none !important;
+    border-radius: 0px;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:focus-visible,
+.btn-primary:hover {
+    background-color: #CC001C !important;
+    margin-top: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    box-shadow: none !important;
+    outline: none;
+    border: 0px none;
+    border-style: none !important;
+    filter: brightness(90%);
+}
+
+/* Form related */
+.form-check {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+option {
+    background-color: #231f20;
+    color: #ffffff;
+}
+
+select.form-control,
+select.form-control:focus {
+    font-family: "Apercu-Regular"!important;
+    font-size: 1em;
+    -webkit-appearance: menulist;
+    color: #231f20;
+    height: 38px;
+    border: 2px solid !important;
+}
+
+.form-control,
+.form-control:focus {
+    font-family: "Apercu-Regular";
+    box-shadow: none;
+    padding-bottom: 0.8vh;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #000000;
+    border-radius: 0px;
+    background-color: #ffffff;
+    padding-top: 0.8vh;
+    border: 2px solid !important;
+}
+
+.form-check-input,
+.form-check-input:focus {
+    background-color: #ffffff;
+    box-shadow: none;
+    border-radius: 0px !important;
+    border: 2px solid !important;
+}
+
+.form-check-input:checked {
+    background-color: #231f20;
+    border: none;
+    box-shadow: none;
+    border: 2px solid !important;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+
+.input-date {
+    color: #231f20;
+    border: 2px solid !important;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+    background: #ffffff;
+}
+
+.input-date:focus-visible {
+    outline: none;
+}
+
+.custom-file-upload {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    height: 36px;
+    padding-top: 3px !important;
+    display: inline-block;
+    text-transform: lowercase;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+
+#file-upload {
+    display: none;
+    text-transform: lowercase;
+    font-family: Arial, sans-serif;
+}
+
+#file-name {
+    font-family: Arial, sans-serif;
+    color: #231F20;
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
+
+.age-gate {
+    display: block;
+    align-content: center;
+    box-sizing: border-box;
+    padding-top: 0px;
+
+    /* padding-left: 0px */
+    /* padding-right: 0px */
+}
+
+label {
+    color: #231f20;
+    padding: 10px 0px 0px;
+    font-family: "ArtoisSebastian-Sans";
+    font-size: 1.2em;
+}
+
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-fill-out {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* placeholder text */
+.form-control::placeholder,
+.input-date::placeholder {
+    font-family: "Apercu-Regular" !important;
+    color: #D3D3D3;
+    opacity: 1;
+    font-size: 0.9em;
+}
+
+::placeholder {
+    font-family: "Apercu-Regular" !important;
+    color: #D3D3D3;
+}
+
+input[type="text"].form-control::-webkit-input-placeholder,
+input[type="tel"].input-date::-webkit-input-placeholder {
+    font-family: "Apercu-Regular" !important;
+    color: #D3D3D3;
+}
+
+.aria-labelledby {
+    color: #D3D3D3;
+}
+
+.header img {
+    width: 100%;
+    margin-top: -0px;
+    padding-bottom: 20px;
+}
+
+/* Footer section */
+.ara-mobile {
+    padding-top: 105px;
+    padding-bottom: 0;
+    position: relative;
+    bottom: 0;
+}
+
+.ara-desktop {
+    padding: 0;
+    bottom: 0;
+}
+
+/* Mobile rules */
+@media (max-width:767px) {
+    .ara-desktop {
+        visibility: hidden;
+        display: none;
+    }
+
+    .hero-desktop {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* Large mobile rules */
+@media (min-height:760px) and (max-height:991px) {
+    #short.body-content {
+        padding-bottom: 15vh !important;
+    }
+}
+
+/* Desktop rules */
+@media (min-width:768px) {
+    .ara-mobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .hero-mobile {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* general layout */
+section.background-theme {
+    min-height: 60vh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+}
+
+/* .logo {
+    padding-top: 30px;
+} */
+a {
+    color: #CC001C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CC001C !important;
+}
+
+a:hover,
+a:focus,
+a:visted,
+a:active {
+    color: #CC001C !important;
+}
+
+.body-content {
+    padding-bottom: 7vh;
+}
+
+.container-fluid {
+}
+
+.index-backdrop {
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.backdrop {
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.closing-backdrop {
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+body {
+    background: #f6ead4;
+}
+
+.chalices {
+    padding-bottom: 0px !important;
+    padding-top: 20px !important;
+}
+
+.scratch-game {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.bold {
+    font-family: "Apercu Medium";
+    color: #231f20;
+    font-size: 1em;
+}
