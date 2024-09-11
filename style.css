@@ -620,7 +620,6 @@ hr {
 }
 
 .backdrop {
-    width: 100% !important;
     background: #01ADDA;
     padding-top: 20px;
     padding-bottom: 20px;
