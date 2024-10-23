@@ -206,7 +206,7 @@ span {
 
     input[type="date"]::before {
         content: attr(placeholder);
-        color: #360D53;
+        color: #ccc;
         display: block;
         border-radius: 5px;
         height: 26px !important;
