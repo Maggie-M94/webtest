@@ -209,7 +209,7 @@ span {
         color: #7D8181;
         display: block;
         border-radius: 5px;
-        height: 26px !important;
+        height: 10px !important;
     }
 
     input[type="date"]:focus::before,
