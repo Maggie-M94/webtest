@@ -311,6 +311,7 @@ a {
 }
 
 .form-control {
+    display: block;
     font-family: "HelveticaNeueLight";
     box-shadow: none;
     border-width: 0px;
