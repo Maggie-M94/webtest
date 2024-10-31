@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "OptimaLTPro-DemiBold";
+    src: url('assets/fonts/OptimaLTPro-DemiBold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OptimaLTPro-Medium";
+    src: url('assets/fonts/OptimaLTPro-Medium.otf');
+    font-style: normal;
+}
+
+p {
+    font-family: "OptimaLTPro-Medium";
+    font-size: 1.2em;
+    padding-top: 0px;
+    text-transform: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+p-alt {
+    font-family: "OptimaLTPro-Medium";
+    font-size: 0.8em;
+    padding-top: 0px;
+    text-transform: none;
+    color: #555555;
+    text-align: center;
+}
+
+h1 {
+    font-family: "OptimaLTPro-DemiBold";
+    font-size: calc(1.375rem + 1.5vw);
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "OptimaLTPro-DemiBold";
+    font-size: calc(1.325rem + 0.9vw);
+    padding-top: 0px;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "OptimaLTPro-DemiBold";
+    font-size: calc(1.205rem + 0.4vw);
+    padding-top: 0px;
+    text-transform: none;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "OptimaLTPro-DemiBold";
+    font-size: calc(1.2rem + 0.3vw);
+    padding-top: 0px;
+    text-transform: none;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: "OptimaLTPro-DemiBold" !important;
+    font-size: calc(1rem + 0.275vw);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 200;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: "OptimaLTPro-DemiBold" !important;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 200;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+span-alt {
+    color: #000000;
+    font-family: "OptimaLTPro-Medium";
+    margin-top: 20px;
+    text-transform: lowercase !important;
+}
+
+span {
+    color: #ffffff;
+    font-family: "OptimaLTPro-DemiBold";
+}
+
+/* Footer section */
+.mobile-footer {
+    padding: 0;
+    bottom: 0;
+}
+
+.desktop-footer {
+    padding: 0;
+    bottom: 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#chocolatier {
+    justify-items: end !important;
+    position: bottom right !important;
+    margin-right: 0px !important;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.footer .row {
+    align-items: center;
+}
+
+.footer p-alt {
+    margin: 0;
+    text-align: left;
+}
+
+.footer-area {
+    margin-top: 0%;
+}
+
+/* XS Mobile rules */
+@media (max-width:767px) {
+    section.background-img {
+        background-image: url('assets/background-img-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 97vh;
+        background-position: center center;
+    }
+
+    .desktop-footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    .footer img {
+        max-height: 20px;
+        margin-left: 10%;
+    }
+
+    .logo-row {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 80px;
+    }
+
+    #short.body-content {
+        padding-bottom: 15vh !important;
+    }
+
+    .body-content {
+        padding-bottom: 8vh;
+    }
+}
+
+/* MD mobile rules */
+@media (min-width:350px) and (max-width:450px) {
+    .body-content {
+        padding-bottom: 8vh;
+    }
+
+    #short.body-content {
+        padding-bottom: 15vh !important;
+    }
+}
+
+/* Desktop rules */
+@media (min-width:768px) {
+    section.background-img {
+        background-image: url('assets/background-img-desktop.png');
+        background-repeat: no-repeat;
+        min-height: 95vh;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .mobile-footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    .footer img {
+        max-height: 35px;
+        margin-left: 50%;
+    }
+
+    .body-content {
+        padding-bottom: 0vh;
+    }
+}
+
+/* Buttons and links */
+.btn-primary {
+    font-family: "OptimaLTPro-DemiBold";
+    border-radius: 0px;
+    box-shadow: none;
+    background-image: linear-gradient(to right, #DDB55E , #F7EDCB, #DDB55E);
+    border: none;
+    width: 100%;
+    color: #A71020 !important;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active {
+    font-family: "OptimaLTPro-DemiBold";
+    border-radius: 0px;
+    background-image: linear-gradient(to right, #DDB55E , #F7EDCB);
+    border: none;
+    width: 100%;
+    color: #A71020 !important;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:focus,
+a:visted,
+a:active {
+    color: #ffffff !important;
+}
+
+a {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+a-alt {
+    color: #555555 !important;
+    text-decoration: underline;
+}
+
+/* Form */
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.age-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.form-control {
+    font-family: "OptimaLTPro-Medium";
+    box-shadow: none;
+    border-width: 0px;
+    background: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #707070;
+    border-radius: 0px;
+}
+
+.form-control:focus,
+.form-control:active,
+.form-control:hover {
+    font-family: "OptimaLTPro-Medium";
+    box-shadow: none;
+    border-width: 0px;
+    background: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #707070 ;
+}
+
+select.form-control {
+    font-family: "OptimaLTPro-Medium";
+    -webkit-appearance: menulist;
+    color: #707070;
+    height: 38px;
+}
+
+.form-check-input:focus {
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: #555555;
+    border-color: #555555;
+    box-shadow: none;
+    width: 1em;
+    height: 1em;
+}
+
+.form-check-input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    padding-right: 10px;
+    border-radius: 0% !important;
+}
+
+.form-check {
+    display: flex;
+    align-items: baseline;
+}
+
+option {
+    color: #555555;
+    font-size: 1em;
+}
+
+.form-check-label {
+    font-family: "OptimaLTPro-Medium" !important;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+input#customFile.upload-file {
+    display: flex;
+    color: #ffffff;
+    border-width: 13px;
+}
+
+.upload-container {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    align-items: center;
+    border: 0px solid #ffffff;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    background-color: #ffffff;
+}
+
+.upload-button {
+    font-family: 'OptimaLTPro-Medium';
+    vertical-align: middle;
+    background-color: #CDCDCD;
+    color: #000000;
+    border-radius: 0px 0px 0px 0px;
+    cursor: pointer;
+    height: 100%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-style: none;
+    text-transform: lowercase !important;
+}
+
+.upload-button:hover,
+.upload-button:active {
+    background-color: #707070;
+    color: #fff;
+}
+
+input#customFile.upload-file {
+    display: flex;
+    color: #ffffff;
+    border-width: 13px;
+}
+
+label {
+    font-family: "OptimaLTPro-Medium" !important;
+    color: #ffffff;
+    padding: 0px 0px 5px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+input[type="text"].form-control::-webkit-input-placeholder {
+    font-family: "OptimaLTPro-Medium";
+    color: #555 !important;
+}
+
+.form-fill-out {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+.input-date {
+    font-family: "OptimaLTPro-Medium" !important;
+    color: #555555 ;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.input-date:focus,
+.input-date:active,
+.input-date:hover {
+    font-family: "OptimaLTPro-Medium" !important;
+    color: #555555 ;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+/* Placeholder text */
+.form-control::placeholder {
+    font-family: "OptimaLTPro-Medium" !important;
+    color: #707070;
+    opacity: 1;
+    letter-spacing: none;
+    font-size: 0.9em;
+}
+
+.input-date::placeholder {
+    font-family: "OptimaLTPro-Medium" !important;
+    color: #707070;
+    opacity: 1;
+    letter-spacing: none;
+    font-size: 0.9em;
+}
+
+::placeholder {
+    color: #707070 !important;
+    font-family: "OptimaLTPro-Medium";
+}
+
+input[type="text"].form-control::-webkit-input-placeholder {
+    color: #707070;
+    font-family: "OptimaLTPro-Medium";
+}
+
+.aria-labelledby {
+    color: #ffffff;
+}
+
+/* General */
+option {
+    font-size: 0.8em;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.logo-row {
+    padding: 20px 0px 20px;
+}
+
+.backdrop {
+    border: 2px solid #DDB55E;
+    padding: 10px 0px 20px;
+    background-color: #A71020;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.backdrop-row {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+.main-content {
+    display: block;
+    align-content: center;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
