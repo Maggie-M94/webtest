@@ -1,11 +1,11 @@
 <project>
     <documents></documents>
     <dmdesigns>
-        <dmdesign active>
+        <dmdesign>
             <dmdesignskill skill="bs5.colors">
-                <dmcolor key="primary" color="#0d6efd"/>
-                <dmcolor key="secondary" color="#6c757d"/>
-                <dmcolor key="info" color="#0dcaf0"/>
+                <dmcolor key="primary" color="rgb(84,100,177)"/>
+                <dmcolor key="secondary" color="rgb(48,36,76)"/>
+                <dmcolor key="info" color="rgb(157,153,212)"/>
                 <dmcolor key="success" color="#198754"/>
                 <dmcolor key="warning" color="#ffc107"/>
                 <dmcolor key="danger" color="#dc3545"/>
@@ -13,11 +13,28 @@
                 <dmcolor key="light" color="#f8f9fa"/>
                 <dmcolor key="dark" color="#212529"/>
             </dmdesignskill>
-            <dmdesignskill skill="fonts"></dmdesignskill>
+            <dmdesignskill skill="fonts" text_family="&quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif" text_weight="" text_color="" text_spacing="" text_effect="" text_italic="" text_smallcaps="" text_uppercase="" headings_family="Impact, Charcoal, sans-serif" headings_weight="" headings_color="" headings_spacing="" headings_effect="" headings_italic="" headings_smallcaps="" headings_uppercase=""></dmdesignskill>
             <dmdesignskill skill="headings" h1_family h1_weight="600" h1_color="$white" h2_family h2_weight="600" h2_color="$white" h1_spacing></dmdesignskill>
-            <dmdesignskill skill="background" image_for_colors="true"></dmdesignskill>
-            <dmdesignskill skill="bootstrap"></dmdesignskill>
+            <dmdesignskill skill="background" image_for_colors="true" image="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHdhbGxwYXBlcnxlbnwwfHx8fDE2NzQyMjA5NTc&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max"></dmdesignskill>
+            <dmdesignskill skill="bootstrap" sizer="0" gutter="0" buttonRoundness="1" shadows="2" gradients="1" responsive_fonts="1" roundness="4"></dmdesignskill>
+        </dmdesign>
+        <dmdesign active>
+            <dmdesignskill skill="bs5.colors">
+                <dmcolor key="primary" color="rgb(84,100,177)"/>
+                <dmcolor key="secondary" color="rgb(48,36,76)"/>
+                <dmcolor key="info" color="rgb(157,153,212)"/>
+                <dmcolor key="success" color="#198754"/>
+                <dmcolor key="warning" color="#ffc107"/>
+                <dmcolor key="danger" color="#dc3545"/>
+                <dmcolor key="white" color="white"/>
+                <dmcolor key="light" color="#f8f9fa"/>
+                <dmcolor key="dark" color="#212529"/>
+            </dmdesignskill>
+            <dmdesignskill skill="fonts" text_family="&quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif" text_weight="" text_color="" text_spacing="" text_effect="" text_italic="" text_smallcaps="" text_uppercase="" headings_family="Impact, Charcoal, sans-serif" headings_weight="" headings_color="" headings_spacing="" headings_effect="" headings_italic="" headings_smallcaps="" headings_uppercase=""></dmdesignskill>
+            <dmdesignskill skill="headings" h1_family h1_weight="600" h1_color="$white" h2_family h2_weight="600" h2_color="$white" h1_spacing></dmdesignskill>
+            <dmdesignskill skill="background" image_for_colors="true" image="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDF8fHdhbGxwYXBlcnxlbnwwfHx8fDE2NzQyMjA5NTc&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max"></dmdesignskill>
+            <dmdesignskill skill="bootstrap" sizer="0" gutter="0" buttonRoundness="1" shadows="2" gradients="1" responsive_fonts="1" roundness="4"></dmdesignskill>
         </dmdesign>
     </dmdesigns>
-    <dmlocked bs5-colors-primary="false" bs5-colors-secondary="false" bs5-colors-info="false" bs5-colors-success="true" bs5-colors-warning="true" bs5-colors-danger="true" bs5-colors-white="true" bs5-colors-light="true" bs5-colors-dark="true" headings-h1_family="true"></dmlocked>
+    <dmlocked bs5-colors-primary="false" bs5-colors-secondary="false" bs5-colors-info="false" bs5-colors-success="true" bs5-colors-warning="true" bs5-colors-danger="true" bs5-colors-white="true" bs5-colors-light="true" bs5-colors-dark="true" headings-h1_family="true" fonts-text_family="false"></dmlocked>
 </project>
