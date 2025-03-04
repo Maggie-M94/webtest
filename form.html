@@ -117,21 +117,6 @@
                 </div>
             </div>
         </section>
-        <script>
-            $("#dateplaceholder").change(function(evt) {
-              var date = new Date($("#dateplaceholder").val());
-              $("#dateplaceholder").attr("type", "text");
-              $("#dateplaceholder").val(date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear());
-            });
-            $("#dateplaceholder").focus(function(evt) {
-              $("#dateplaceholder").attr("type", "date");
-              setTimeout('$("#dateplaceholder").click();', 500);
-            });
-            $("#dateplaceholder").attr("type", "text");
-            // document.getElementById("dob").addEventListener("click", function() {
-            //     this.showPicker(); // Opens the native date picker
-            // });
-        </script>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
