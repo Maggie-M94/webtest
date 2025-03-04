@@ -357,11 +357,6 @@ input[type="text"].form-control::-webkit-input-placeholder {
     color: #D3D3D3 !important;
 }
 
-input[type="date"].form-control::-webkit-input-placeholder {
-    font-family: "HelveticaNeue-Condensed" !important;
-    color: #0C2340 !important;
-}
-
 .form-fill-out {
     padding-left: 0px;
     padding-right: 0px;
