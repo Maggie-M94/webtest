@@ -362,18 +362,8 @@ input[type="date"].form-control::-webkit-input-placeholder {
     color: #D3D3D3 !important;
 }
 
-input[type="date"]:before {
-  color: #D3D3D3;
-  content: attr(placeholder) !important;
-  margin-right: 0.5em;
-}
-
 input[type="date"]:focus:before {
   content: '' !important;
-}
-
-input[type='date']:after {
-  content: attr(placeholder)
 }
 
 .form-fill-out {
