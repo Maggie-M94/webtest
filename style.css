@@ -364,6 +364,11 @@ input[type="date"].form-control::-webkit-input-placeholder {
     color: #D3D3D3 !important;
 }
 
+#dateInput{
+    font-family: "HelveticaNeue-Condensed" !important;
+    color: #D3D3D3 !important;
+}
+
 .form-fill-out {
     padding-left: 0px;
     padding-right: 0px;
