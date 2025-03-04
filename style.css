@@ -362,10 +362,6 @@ input[type="date"].form-control::-webkit-input-placeholder {
     color: #D3D3D3 !important;
 }
 
-input[type="date"]:focus:before {
-  content: '' !important;
-}
-
 .form-fill-out {
     padding-left: 0px;
     padding-right: 0px;
