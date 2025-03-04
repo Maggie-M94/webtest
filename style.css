@@ -357,10 +357,10 @@ input[type="text"].form-control::-webkit-input-placeholder {
     color: #D3D3D3 !important;
 }
 
-input[type="date"].form-control::-webkit-input-placeholder {
+/* input[type="date"].form-control::-webkit-input-placeholder {
     font-family: "HelveticaNeue-Condensed" !important;
     color: #D3D3D3 !important;
-}
+} */
 
 .form-fill-out {
     padding-left: 0px;
@@ -421,6 +421,11 @@ input[type="date"].form-control::-webkit-input-placeholder {
 }
 
 input[type="text"].form-control::-webkit-input-placeholder {
+    color: #D3D3D3;
+    font-family: "HelveticaNeue-Condensed";
+}
+
+input[type="date"].form-control::-webkit-input-placeholder {
     color: #D3D3D3;
     font-family: "HelveticaNeue-Condensed";
 }
