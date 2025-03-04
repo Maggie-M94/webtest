@@ -354,18 +354,16 @@ label {
 
 input[type="text"].form-control::-webkit-input-placeholder {
     font-family: "HelveticaNeue-Condensed" !important;
-    font-family: "CoronaHeadline-SemiBold";
     color: #D3D3D3 !important;
 }
 
 input[type="date"].form-control::-webkit-input-placeholder {
     font-family: "HelveticaNeue-Condensed" !important;
-    font-family: "CoronaHeadline-SemiBold";
     color: #D3D3D3 !important;
 }
 
 input[type="date"]:before {
-  color: lightgrey;
+  color: #D3D3D3;
   content: attr(placeholder) !important;
   margin-right: 0.5em;
 }
