@@ -53,7 +53,7 @@
                                                     </div>
                                                     <div class="mb-3"> 
                                                         <label for="dateInput" class="form-label">Date of birth*</label>
-                                                        <input type="text" class="form-control" placeholder="yyyy/mm/dd" name="dateInput" onfocusin="(this.type='date')" onfocusout="(this.type='text')">
+                                                        <input type="text" class="form-control" placeholder="yyyy/mm/dd" name="dateInput" onfocus="this.type='date'; this.setAttribute('onfocus','');this.blur();this.focus();">
 
                                                     </div>                                                     
                                                     <div class="mb-3"> 
