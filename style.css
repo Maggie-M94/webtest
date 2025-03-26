@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'futura-pt-demi';
+    src: url('assets/fonts/futura-pt-demi.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura-medium';
+    src: url('assets/fonts/FuturaCyrillicMedium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPTCondBold';
+    src: url('assets/fonts/FuturaPTCondBold.otf');
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'futura-pt-demi';
+    font-size: 2em;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'futura-pt-demi';
+    font-size: calc(1.325rem + 0.9vw);
+    text-transform: uppercase;
+    color: #ffffff !important;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'futura-pt-demi';
+    font-size: calc(1.3rem + 0.6vw);
+    padding-top: 10px;
+    text-transform: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'futura-medium';
+    font-size: calc(1.2rem + 0.275vw);
+    padding-top: 10px;
+    text-transform: none;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    font-family: 'futura-medium';
+    font-size: 1em;
+    padding-top: 10px;
+    text-transform: none;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+}
+
+p#alt {
+    color: #ffffff;
+    text-align: left;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    margin-top: 0;
+    padding-left: 10px;
+    line-height: 1.3em;
+    font-size: 1.05em;
+}
+
+span {
+    color: inherit;
+    font-family: 'futura-pt-demi';
+    text-transform: none;
+}
+
+mark {
+    background-color: #008ECF;
+    color: #ffffff;
+    padding: 2px 4px;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    font-family: 'FuturaPTCondBold';
+    box-shadow: none;
+    background-image: linear-gradient(#719A00,#083711);
+    width: 100%;
+    color: #ffffff;
+    outline: none;
+    padding-bottom: 1vh;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0px;
+    margin-bottom: 20px;
+    padding-top: 1vh;
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:hover,
+.btn-primary:active {
+    font-family: 'FuturaPTCondBold';
+    box-shadow: none;
+    background-image: linear-gradient(#083711,);
+    width: 100%;
+    color: #ffffff;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    filter: brightness(90%);
+    border: 0px;
+}
+
+.input-date {
+    font-family: 'futura-medium';
+    color: #003876;
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 0px solid #ffffff;
+    height: 100%;
+    font-size: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.input-date:active,
+.input-date:focus-visible,
+.input-date:focus {
+    outline: none;
+}
+
+.age-gate-row {
+    position: relative;
+    isolation: isolate;
+}
+
+.age-gate {
+    display: block;
+    align-content: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.age-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Footer section */
+.desktop-mobile {
+    /* padding: 0 */
+    bottom: 0;
+    position: fixed;
+}
+
+/* .desktop-footer {
+    padding: 0;
+    bottom: 0;
+    z-index: 0;
+    position: fixed;
+} */
+label {
+    font-family: 'futura-medium';
+    color: #ffffff;
+    padding: 10px 0px 0px;
+}
+
+/* Mobile rules */
+@media (max-width:992px) {
+    section.background-img {
+        background-repeat: no-repeat;
+        min-height: 95vh;
+        background-position: center center;
+        overflow-x: hidden;
+        background-size: cover;
+        background-image: url('assets/mobile-background-img.png');
+        background-attachment: fixed;
+    }
+
+    section.form-background {
+        background-repeat: no-repeat;
+        min-height: 95vh;
+        background-position: center center;
+        overflow-x: hidden;
+        background-size: cover;
+        background-image: url('assets/mobile-plain-background-img.png');
+        background-attachment: fixed;
+    }
+
+    .desktop-footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    .drinks-desktop {
+        visibility: hidden;
+        display: none;
+    }
+
+    .body-img {
+        background-image: url('assets/mobile-plain-background-img.png');
+    }
+}
+
+/* Desktop rules */
+@media (min-width:992px) {
+    section.background-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-position: center center;
+        background-image: url('assets/desktop-background-img.png');
+        background-attachment: fixed;
+    }
+
+    section.form-background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-position: center center;
+        background-image: url('assets/desktop-plain-background-img.png');
+        background-attachment: fixed;
+    }
+
+    .mobile-footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    .heading-line {
+        padding-top: 0.9em;
+    }
+
+    .drinks-mobile {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* Links */
+a {
+    color: #ffffff;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Form */
+.form-control {
+    font-family: 'futura-medium' !important;
+    font-size: 0.9em;
+    color: #719A00;
+    box-shadow: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    font-family: 'futura-medium' !important;
+    box-shadow: none;
+    background-color: #ffffff;
+    border: 0px none #ffffff;
+    color: #528547;
+}
+
+select.form-control {
+    font-family: 'futura-medium' !important;
+    -webkit-appearance: menulist;
+    color: #528547;
+    font-size: 0.9em;
+    height: 36px;
+}
+
+option {
+    font-family: 'futura-medium' !important;
+    color: #528547;
+    font-size: 0.9em;
+}
+
+.form-control::placeholder {
+    font-family: 'futura-medium';
+    color: #B5B5B5;
+    opacity: 1;
+    font-size: 0.9em;
+}
+
+::placeholder {
+    color: #B5B5B5;
+    font-family: 'futura-medium';
+}
+
+.mb-3 {
+    margin-bottom: 0px !important;
+}
+
+.form-check {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.form-check-input:checked {
+    background-color: #528547;
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.form-check-input {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+
+.form-check-input:focus {
+    background-color: none;
+    border-width: 2px;
+    border-color: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+
+input[type="text"].form-control::-webkit-input-placeholder {
+    color: #B5B5B5;
+}
+
+.aria-labelledby {
+    color: #B5B5B5;
+}
+
+input#customFile.upload-file {
+    display: flex;
+    color: #ffffff;
+    border-width: 13px;
+}
+
+.custom-file-label {
+    font-family: 'futura-medium';
+    background-color: #528547;
+    color: #ffffff;
+    border: 2px #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 6px 12px;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.file-upload-container {
+    font-family: 'futura-medium';
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #528547;
+    padding: 0px;
+}
+
+.file-upload-text {
+    font-family: 'futura-medium';
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+/* General */
+.body-content {
+    padding-bottom: 10vh;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.prizes {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    box-shadow: #083711;
+}
+
+.redds-logo {
+    max-width: 80px;
+    height: auto;
+    margin-top: 0px !important;
+    padding: 0px 0px 0px 10px!important;
+}
+
+.ff-bottle {
+    padding-top: 0px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.backdrop {
+    background-color: rgb(8, 55, 17, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
