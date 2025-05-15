@@ -1,0 +1,827 @@
+@font-face {
+    font-family: "DIN-2014_Bold";
+    src: url('assets/fonts/DIN-2014_Bold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN-2014_Regular";
+    src: url('assets/fonts/DIN-2014_Regular.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN-2014_Demi";
+    src: url('assets/fonts/DIN-2014_Demi.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DIN-2014_Light";
+    src: url('assets/fonts/DIN-2014_Light.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Forte";
+    src: url('assets/fonts/FORTE.ttf');
+    font-style: normal;
+}
+
+h1 {
+    font-family: "DIN-2014_Bold";
+    font-size: calc(1.375rem + 1.5vw);
+    padding-top: 10px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #ffffff !important;
+    text-align: center;
+}
+
+h2 {
+    font-family: "DIN-2014_Bold";
+    position: relative;
+    font-size: calc(1.325rem + 0.9vw);
+    padding-top: 10px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #ffffff !important;
+    z-index: 1;
+    font-weight: inherit;
+}
+
+h3 {
+    font-family: "DIN-2014_Bold";
+    font-size: calc(1.2rem + 0.4vw);
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-family: "DIN-2014_Bold";
+    font-size: calc(1.275rem + 0.3vw);
+    padding-top: 0px;
+    text-transform: none;
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h5 {
+    font-family: "DIN-2014_Demi";
+    font-size: calc(1.075rem + 0.3vw);
+    padding-top: 10px !important;
+    text-transform: uppercase;
+    color: #191D63;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: "DIN-2014_Regular";
+    font-size: 1.2em;
+    padding-top: 0px;
+    text-transform: none;
+    color: #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+span {
+    font-family: inherit;
+}
+
+/* Buttons */
+.btn-primary {
+    box-shadow: none;
+    font-family: "DIN-2014_Bold";
+    border-radius: 0px;
+    background: linear-gradient(90deg, #0047BA 0%, #0093D3 20%, #0047BA 50%, #0093D3 80%, #0047BA 100%);
+    transition: all .4s ease-in-out;
+    border: 0px solid #0047ba;
+    width: 100%;
+    color: #ffffff;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus-visible {
+    box-shadow: none;
+    font-family: "DIN-2014_Bold";
+    background: linear-gradient(60deg, #0047BA 0%, #0093D3 20%, #0047BA 60%, #0093D3 80%, #0093D3 100%);
+    transition: all .4s ease-in-out;
+    color: #ffffff;
+    outline: none;
+    border: 0px solid #0047ba !important;
+    box-shadow: none;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.btn-primary:active:focus {
+    box-shadow: none;
+}
+
+/* Footer section */
+.downtown {
+    position: fixed;
+    bottom: 0 !important;
+    display: block;
+}
+
+/* .mobile-footer {
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    display: flex;
+}
+
+.desktop-footer {
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 0px;
+} */
+@media only screen and (max-width: 380px) {
+    .player-jersey {
+        height: 40px !important;
+    }
+}
+
+@media only screen and (width: 688px) {
+    .soccer-field {
+        background-image: url('assets/mobile-soccer-field.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 767px) {
+    .soccer-field {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px !important;
+    }
+}
+
+/* XS Mobile rules */
+.player-jersey {
+    height: 70px!important;
+}
+
+.empty-spacer {
+    display: none;
+    visibility: hidden;
+}
+
+span#player-position {
+    font-family: "Din-2014_Demi" !important;
+    font-size: 0.3em !important;
+}
+
+span#player-name {
+    font-family: "Din-2014_Demi" !important;
+    font-size: 0.3em !important;
+}
+
+.soccer-field {
+    height: 100%;
+    width: 100%;
+
+    /* padding-left: 2vw;
+    padding-right: 2vw; */
+}
+
+/* Mobile rules */
+@media (max-width:767px) {
+    section.background {
+        background-image: url('assets/background-img-mobile.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 95vh;
+    }
+
+    .desktop-footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    .player-jersey {
+        height: 50px!important;
+    }
+
+    /* .soccer-field {
+        background-image: url('assets/soccer-field.png');
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px !important;
+        padding-top: 0px !important;
+    } */
+    .soccer-field {
+        background-image: url('assets/mobile-soccer-field.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        /* background-position: center center; */
+        height: 100%;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .empty-spacer {
+        display: none;
+        visibility: hidden;
+    }
+
+    span#player-position {
+        font-size: 0.4em !important;
+        font-family: "Din-2014_Demi" !important;
+    }
+
+    span#player-name {
+        font-size: 0.4em !important;
+        font-family: "Din-2014_Demi" !important;
+    }
+}
+
+/* Desktop rules */
+@media (min-width:768px) {
+    section.background {
+        min-height: 95vh;
+        background-image: url('assets/background-img-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+
+    .mobile-footer {
+        visibility: hidden;
+        display: none;
+    }
+
+    .soccer-field {
+        background-image: url('assets/soccer-field.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100%;
+        padding-top: 2vw;
+    }
+}
+
+/* Soccer field related */
+/* .soccer-field {
+    background-image: url('assets/mobile-soccer-field.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    padding-top: 2vw;
+} */
+.player-jersey {
+    height: 50%;
+}
+
+/* Player positions */
+span#player-position {
+    font-family: "DIN-2014_Bold" !important;
+    background-color: #E1251B !important;
+    font-size: 0.9em !important;
+    display: block;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+span#player-name {
+    font-family: "DIN-2014_Regular" !important;
+    background-color: #0047BA !important;
+    font-size: 0.9em !important;
+    display: block;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+span#player-team {
+    font-family: "Din-2014_Regular" !important;
+    background-color: #0047BA !important;
+    font-size: 0.9em !important;
+    display: block;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+span#player-region {
+    font-family: "Din-2014_Regular" !important;
+    background-color: #0047BA !important;
+    font-size: 0.9em !important;
+    display: block;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.player-area {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Links */
+a:hover,
+a:visted,
+a:active,
+a:focus,
+a:focus-visible {
+    color: #0047ba !important;
+    border: none;
+    box-shadow: none;
+    filter: brightness(100%);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+    border: none;
+}
+
+/* Form */
+label {
+    font-family: "Din-2014_Regular" !important;
+    color: #ffffff;
+    padding: 0px;
+    font-size: 1.15em;
+    font-weight: inherit;
+    text-transform: none;
+}
+
+.input-date {
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 2rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.input-date:focus-visible {
+    border-radius: 0px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.age-confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+select.form-control {
+    font-family: "Din-2014_Regular" !important;
+    font-size: 1em;
+    -webkit-appearance: menulist;
+    color: #191D63;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+select.form-control:focus {
+    color: #191D63;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+option {
+    font-size: 1em !important;
+    min-height: 1em;
+    color: #191D63;
+}
+
+.form-check-input[type="checkbox"] {
+    border-radius: 0px;
+}
+
+.form-control {
+    font-family: "Din-2014_Regular";
+    box-shadow: none;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #191D63;
+    border-radius: 0px;
+    background-color: #ffffff;
+}
+
+.form-control:focus,
+.form-control:active {
+    color: #191D63;
+    box-shadow: none;
+    border-width: 0px;
+    background-color: #ffffff;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input#customFile.upload-file {
+    display: flex;
+    color: #ffffff;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 0px;
+}
+
+.form-check-input,
+.form-check-input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.form-check-input:checked {
+    background-color: #0047ba;
+    border-color: #0047ba !important;
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-check-input:active,
+.form-check-input:focus-visible {
+    background-color: #0047ba;
+    border-color: #0047ba !important;
+    box-shadow: none;
+    outline: none;
+    color: #ffffff;
+}
+
+/* Placeholder */
+::placeholder {
+    font-family: "Din-2014_Regular";
+    color: #b0b3b4;
+}
+
+.form-control::placeholder {
+    font-family: "Din-2014_Regular";
+    color: #b0b3b4;
+}
+
+input[type="text"].form-control::-webkit-input-placeholder {
+    color: #b0b3b4;
+    font-family: "Din-2014_Regular";
+}
+
+.aria-labelledby {
+    color: #b0b3b4;
+}
+
+/* General layout */
+.col-10.col-lg-10.col-md-10.col-sm-10 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    overflow: hidden;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.body-content {
+    display: block;
+    z-index: 3;
+    position: relative;
+    padding-bottom: 15vh;
+}
+
+.beverage-background {
+    z-index: 1;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+/* .main {
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+.logo {
+    padding: 50px 0px 30px;
+}
+
+.footer {
+    background-color: transparent;
+}
+
+form {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 1rem 0;
+    color: #ffffff;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: 1;
+}
+
+/* Fixture */
+.search-bar {
+    color: #191D63 !important;
+    max-width: 50%;
+    margin: 20px auto;
+    margin-left: 0px !important;
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+
+.fixture-card {
+    background-color: #191D63;
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.vs-box {
+    font-family: forte;
+    font-size: 1.5em;
+    background-color: #ffffff;
+    color: #191D63;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    margin-bottom: -3px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fixture-detail {
+    font-family: "DIN-2014_Regular";
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #191D63;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+    border-radius: 0px;
+}
+
+.arrow-down {
+    background-color: #ffffff;
+    font-size: 0.8rem;
+    color: #191D63;
+    margin: 0px 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.team-names {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Din-2014_Demi";
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: 90%;
+    border-radius: 5px;
+}
+
+/* Player table */
+.header {
+    background-color: #00194A;
+    color: #ffffff;
+    padding: 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: -0%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.player-logo {
+    width: 60px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -12px;
+}
+
+.players-table {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #191D63;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px;
+}
+
+.table > tbody {
+    --bs-table-bg: transparent;
+}
+
+.table tr {
+    border-bottom: 1px solid rgba(25, 29, 99, 0.2);
+    width: 100%;
+}
+
+.table td {
+    color: #191D63;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+/* Unique Code Modal */
+.modal-header {
+    background-color: #0047BA;
+    border-bottom: 0px;
+    border-radius: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+.btn-close {
+    --bs-btn-close-bg: url(assets/close.png);
+}
+
+.btn-secondary {
+    box-shadow: none;
+    font-family: "DIN-2014_Bold";
+    border-radius: 0px;
+    background: linear-gradient(90deg, #0047BA 0%, #0093D3 20%, #0047BA 50%, #0093D3 80%, #0047BA 100%);
+    transition: all .4s ease-in-out;
+    border: 0px solid #0047ba;
+    width: 100%;
+    color: #ffffff;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.btn-secondary:focus,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus-visible {
+    box-shadow: none;
+    font-family: "DIN-2014_Bold";
+    background: linear-gradient(60deg, #0047BA 0%, #0093D3 20%, #0047BA 60%, #0093D3 80%, #0093D3 100%);
+    transition: all .4s ease-in-out;
+    color: #ffffff;
+    outline: none;
+    border: 0px solid #0047ba !important;
+    box-shadow: none;
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+/* Modal */
+.modal-header .btn-close {
+    --bs-btn-close-color: #ffffff !important;
+}
+
+/* Leaderboard */
+.field {
+    background-color: #08306b;
+    border: 5px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player-img {
+    width: 60px;
+    height: auto;
+    margin: 0 auto 5px;
+}
+
+.player-role {
+    background-color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    padding: 2px;
+}
+
+.player-info {
+    background-color: #0044cc;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px 2px;
+    margin: 0;
+}
+
+.goalkeeper-section {
+    margin-bottom: 40px;
+}
+
+.goal {
+    border: 3px solid white;
+    height: 60px;
+    width: 80px;
+    margin: 0 auto 10px;
+}
+
+/* Boxes */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+
+    /* max-width: 500px; */
+}
+
+.box-image {
+    width: 100%;
+    height: auto;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
