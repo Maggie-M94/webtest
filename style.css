@@ -356,7 +356,7 @@ section.footer {
         background-image: url("assets/mobile-background.jpg");
         background-color: #FFFADC;
         background-position: center center;
-        background-size: cover;
+        background-size: container;
         background-repeat: no-repeat;
         background-attachment: fixed;
         width: 100%;
