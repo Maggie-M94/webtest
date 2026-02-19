@@ -21,7 +21,7 @@
                 <div class="logo row">
                     <div class="col col-lg col-md col-sm"> 
 </div>
-                    <div class="col-6 col-lg-3 col-md-2 col-sm-6"> 
+                    <div class="col-8 col-lg-3 col-md-2 col-sm-8"> 
                         <img src="assets/logo.png" alt="logo" style="width:100%;"/>
                     </div>
                     <div class="col col-lg col-md col-sm"> 
@@ -56,28 +56,28 @@
             </div>
         </section>
         <section>
-    <div class="row">
-        <div class="col col-lg col-md col-sm"></div>
-
-        <div class="col-10 col-lg-6 col-md-6 col-sm-10">
             <div class="row">
-                <div class="col-12">
-                    <video id="campaignVideo" class="w-100" controls playsinline>
-                    
-                        <!-- Mobile video -->
-                        <source src="assets/BERN_9x16.mp4" media="(max-width: 767px)" type="video/mp4">
-                        <!-- Desktop video -->
-                        <source src="assets/BERN_FILM.mp4" media="(min-width: 768px)" type="video/mp4">
+                <div class="col col-lg col-md col-sm"></div>
 
-                    </video>
+                <div class="col-10 col-lg-6 col-md-6 col-sm-10">
+                    <div class="row">
+                        <div class="col-12">
+                            <video id="campaignVideo" class="w-100" controls playsinline>
+                            
+                                <!-- Mobile video -->
+                                <source src="assets/BERN_9x16.mp4" media="(max-width: 767px)" type="video/mp4">
+                                <!-- Desktop video -->
+                                <source src="assets/BERN_FILM.mp4" media="(min-width: 768px)" type="video/mp4">
 
+                            </video>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="col col-lg col-md col-sm"></div>
-    </div>
-</section>
+                <div class="col col-lg col-md col-sm"></div>
+            </div>
+        </section>
 
         <section class="footer-area">
             <div class="container-fluid">
@@ -92,64 +92,80 @@
         <!-- Bootstrap core JavaScript-->
 
         <!-- ios video thumbnail -->
-       <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const video = document.getElementById("campaignVideo");
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const video = document.getElementById("campaignVideo");
 
-    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+                const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
-    if (isMobile) {
-        video.setAttribute("preload", "metadata");
-        video.setAttribute("poster", "assets/Thumbnail.png");
-        video.src = "assets/BERN_9x16.mp4";
-    } else {
-        video.src = "assets/BERN_FILM.mp4";
-    }
+                if (isMobile) {
+                    video.setAttribute("poster", "assets/Thumbnail.png");
+                    video.setAttribute("preload", "metadata");
+                    video.src = "assets/BERN_9x16.mp4";
+                }else {
+                    video.src = "assets/BERN_FILM.mp4";
+                }
+            });
+        </script>
 
-    video.load(); // Important for Safari
-});
-</script>
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const video = document.getElementById("campaignVideo");
+
+                const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+                if (isMobile) {
+                    video.setAttribute("preload", "metadata");
+                    video.setAttribute("poster", "assets/Thumbnail.png");
+                    video.src = "assets/BERN_9x16.mp4";
+                } else {
+                    video.src = "assets/BERN_FILM.mp4";
+                }
+
+                video.load(); // Important for Safari
+            });
+    </script> -->
 
 
 <!-- Thank You Modal -->
     <div class="modal fade" id="thankYouModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered bernini-modal">
-        <div class="modal-content bernini-modal__content">
+        <div class="modal-dialog modal-dialog-centered bernini-modal">
+            <div class="modal-content bernini-modal__content">
 
-        <div class="bernini-modal__header">
-            <div class="bernini-modal__title">THANK YOU</div>
-            <button type="button" class="bernini-modal__close" data-bs-dismiss="modal" aria-label="Close">
-            X
-            </button>
+                <div class="bernini-modal__header">
+                    <div class="bernini-modal__title">THANK YOU</div>
+                    <button type="button" class="bernini-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    X
+                    </button>
+                </div>
+
+                <div class="bernini-modal__body text-center">
+                    <p class="mb-1">Thank you for watching.</p>
+                    <p class="mb-4"><strong>Lock in your entry.</strong></p>
+
+                    <a href="#" class="btn bernini-modal__btn w-100">LOCK IN</a>
+                </div>
+
+            </div>
         </div>
-
-        <div class="bernini-modal__body text-center">
-            <p class="mb-1">Thank you for watching.</p>
-            <p class="mb-4"><strong>Lock in your entry.</strong></p>
-
-            <a href="#" class="btn bernini-modal__btn w-100">LOCK IN</a>
-        </div>
-
-        </div>
-    </div>
     </div>
         <!-- Modal Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        const video = document.getElementById('campaignVideo');
-        const modalEl = document.getElementById('thankYouModal');
-        const modal = new bootstrap.Modal(modalEl);
+            const video = document.getElementById('campaignVideo');
+            const modalEl = document.getElementById('thankYouModal');
+            const modal = new bootstrap.Modal(modalEl);
 
-        video.addEventListener('ended', function () {
-            // Exit fullscreen first (helps on some browsers)
-            if (document.fullscreenElement) {
-            document.exitFullscreen().catch(() => {});
-            } else if (document.webkitFullscreenElement) {
-            document.webkitExitFullscreen?.();
-            }
+            video.addEventListener('ended', function () {
+                // Exit fullscreen first (helps on some browsers)
+                if (document.fullscreenElement) {
+                document.exitFullscreen().catch(() => {});
+                } else if (document.webkitFullscreenElement) {
+                document.webkitExitFullscreen?.();
+                }
 
-            setTimeout(() => modal.show(), 200);
-        });
+                setTimeout(() => modal.show(), 200);
+            });
         });
     </script>
 
