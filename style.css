@@ -233,8 +233,8 @@ label {
 
 .input-date:focus-visible {
     border-radius: 0px;
-    background-color: #97D0F5;
-    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    border: 2px solid #97D0F5;
     outline: none;
 }
 
